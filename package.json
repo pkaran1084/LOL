@@ -1,0 +1,17 @@
+{
+  "name": "lol",
+  "version": "1.0.0",
+  "description": "The LOL ShowCase Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zhuoli Xiao",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "mongoose": "^5.3.15"
+  }
+}

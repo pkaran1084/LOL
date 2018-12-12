@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>entry</title>
+	<link rel="stylesheet" type="text/css" href="/lol/public/masteryStyle.css">
+</head>
+<body>
+    <h1>MyPlayerID:<%= parsedbd[1]["playerId"]%></hi>
+    <table id="myTable">
+  <tr class="header">
+    <th style="width:15%;">championId</th>
+    <th style="width:15%;">championLevel</th>
+    <th style="width:15%;">championPoints</th>
+    <th style="width:15%;">lastPlayTime</th>
+    <th style="width:15%;">championPointsUntilNextLevel</th>
+    <th style="width:15%;">tokensEarned</th>
+  </tr>
+  <% parsedbd.forEach(function(stats){ %>
+   <tr> 
+      <td><%= stats["championId"] %></td>
+      <td><%= stats["championLevel"] %></td>
+      <td><%= stats["championPoints"] %></td>
+      <td><%= stats["lastPlayTime"] %></td>
+      <td><%= stats["championPointsUntilNextLevel"] %></td>
+      <td><%= stats["tokensEarned"] %></td>
+   </tr>
+  <% })%>
+</table>
+
+</body>
+</html>
